@@ -229,3 +229,10 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-border-dark-grey,.w3-hover-border-dark-grey:hover,.w3-border-dark-gray,.w3-hover-border-dark-gray:hover{border-color:#616161!important}
 .w3-border-pale-red,.w3-hover-border-pale-red:hover{border-color:#ffe7e7!important}.w3-border-pale-green,.w3-hover-border-pale-green:hover{border-color:#e7ffe7!important}
 .w3-border-pale-yellow,.w3-hover-border-pale-yellow:hover{border-color:#ffffcc!important}.w3-border-pale-blue,.w3-hover-border-pale-blue:hover{border-color:#e7ffff!important}
+
+.i-table,.i-table-all{border-collapse:collapse;border-spacing:0;width:50%;display:table}.i-table-all{border:1px solid #ccc}
+.i-bordered tr,.i-table-all tr{border-bottom:1px solid #ddd}.i-striped tbody tr:nth-child(even){background-color:#f1f1f1}
+.i-table-all tr:nth-child(odd){background-color:#fff}.i-table-all tr:nth-child(even){background-color:#f1f1f1}
+.i-hoverable tbody tr:hover,.i-ul.i-hoverable li:hover{background-color:#ccc}.i-centered tr th,.i-centered tr td{text-align:center}
+.i-table td,.i-table th,.i-table-all td,.i-table-all th{padding:2px 2px;display:table-cell;text-align:left;vertical-align:top}
+.i-table th:first-child,.i-table td:first-child,.i-table-all th:first-child,.i-table-all td:first-child{padding-left:2px}
