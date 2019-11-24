@@ -3,11 +3,10 @@
     <head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <link rel="stylesheet" href="css/new_web.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
         <title> Alan's Trading</title>
-        <style>
-</style>
     </head>
-	
     <body marginwidth="1" marginheight="1">
         <font>
             <h2>Alan's Tranding</h2>
@@ -32,7 +31,7 @@
             
 			<!-- *************************************************************************************** -->
 			<hr/>
-            <h2>Working Sample (Projects)</h2>
+            <h2>Working Sample & Projects</h2>
             <p>
               Below are some Quant-Finance projects I have done since 2018. They are mainly in interests rate modeling and pricing includes curve building,
               Derivatives(Swaps/FXs/Options) pricing, XVA and VaR. They are all built in PYTHON with QuantLib as support library.
@@ -47,75 +46,56 @@
             </p> 
             <ol type="disk">
 				<li>
-                    <div class="heading" onmouseover="this.style.background='#F5F5F5';" onmouseout="this.style.background='#E5E5E5';">
-						<h4>
-							<a name='Bootstrapping'>
-								Yield Curve Building: Bootstrapping with LIBOR curve, FX curve and OIS curve.
-							</a>
-							<span class="icon-close-open"></span>
-						</h4>
-					</div>
-					<div class="expandable">
-						<p>
+                    <button type="button" class="collapsible">
+                        Yield Curve Building: Bootstrapping with LIBOR curve, FX curve and OIS curve.
+                    </button>
+					<div class="content">
+                        <p>
 						In this section, I will start with curve building method in Fixed Income area. The importance of curve building
                         sets the backbone for almost all analyze staff in Fixed Income area. From where you might be able to learn and do
                         analysis of Risks, Valuations and Simulations. Basically there are three different curves involved: LIBOR curve,
                         FX curve and OIS curve.
+                        </br>
+                        <a href="Samples/Bootstrapping.html">NoteBook:BootStrapping.html</a>
                         </p>
-                        <p><a href="Samples/Bootstrapping.html">NoteBook:BootStrapping.html</p>
-					</div>
+                    </div>
                 </li>
 				<li>
-                    <div class="heading" onmouseover="this.style.background='#F5F5F5';" onmouseout="this.style.background='#E5E5E5';">
-						<h4>
-							<a name='SwapPricing'>
-								Derivatives Pricing: Swaps/FXs/Options pricing after bootstrapping.
-							</a>
-							<span class="icon-close-open"></span>
-						</h4>
-					</div>
-					<div class="expandable">
+                    <button type="button" class="collapsible">
+                        Derivatives Pricing: Swaps/FXs/Options pricing after bootstrapping.
+                    </button>
+					<div class="content">
 						<p>
 						In this section, I will talk about a directly applied area with bootstrapped curves. This could
                         be consider the most fundamental application and daily used function in Fixed Income area.
                         In the below, I will detail pricing on swaps with LIBOR curve, FX with FX curve (currency collateral adjusted curve)
                         and Basis swap with OIS curve (Overnight rates curve).
+                        </br>
+                        <a href="Samples/SwapPricing.html">NoteBook:SwapPricing.html</a>
                         </p>
-                        <p><a href="Samples/SwapPricing.html">NoteBook:SwapPricing.html</p>
-					
 					</div>
                 </li>
                 <li>
-                    <div class="heading" onmouseover="this.style.background='#F5F5F5';" onmouseout="this.style.background='#E5E5E5';">
-						<h4>
-							<a name='OptionPricing'>
-								Option Pricing: Advanced pricing on Cap/Floor/Swaption with curve building and pricing module.
-							</a>
-							<span class="icon-close-open"></span>
-						</h4>
-					</div>
-					<div class="expandable">
+                    <button type="button" class="collapsible">
+                        Option Pricing: Advanced pricing on Cap/Floor/Swaption with curve building and pricing module.
+                    </button>
+					<div class="content">
 						<p>
 						In this section, we will be using all knowledge leaned above and apply with another level of complexity.
                         Pricing of options in interests rate area involved curve building and basic derivatives pricing.
                         Moreover, we will start to introduce another structure, the volatility surface (for cap/floor) volatility curve (for swaption).
                         In this section, we only focus on applying Black formula with current market instruments data to price.
                         However, in the next section, I will talk more about how to use more advanced mathematical method called Monte-Carlo simulation to solve the same problem.
+                        </br>
+                        <a href="Samples/BasicOptionPricing.html">NoteBook:BasicOptionPricing.html</a>
                         </p>
-                        <p><a href="Samples/BasicOptionPricing.html">NoteBook:BasicOptionPricing.html</p>
-					
 					</div>
                 </li>
                 <li>
-                    <div class="heading" onmouseover="this.style.background='#F5F5F5';" onmouseout="this.style.background='#E5E5E5';">
-						<h4>
-							<a name='Shortrate'>
-								Short-Rate Model: Prerequisite on Monte-Carlo simulation method for option pricing.
-							</a>
-							<span class="icon-close-open"></span>
-						</h4>
-					</div>
-					<div class="expandable">
+                    <button type="button" class="collapsible">
+                        Short-Rate Model: Prerequisite on Monte-Carlo simulation method for option pricing.
+                    </button>
+					<div class="content">
 						<p>
 						In this section, I will walk you through Short-Rate model for rate curve generation and simulation.
                         This is a prerequisite for Monte-Carlo simulation method for more advanced option pricing theory and application.
@@ -126,45 +106,30 @@
 					</div>
                 </li>
                 <li>
-                    <div class="heading" onmouseover="this.style.background='#F5F5F5';" onmouseout="this.style.background='#E5E5E5';">
-						<h4>
-							<a name='ExoticPricing'>
-								Exotic Option Pricing:.
-							</a>
-							<span class="icon-close-open"></span>
-						</h4>
-					</div>
-					<div class="expandable">
+                    <button type="button" class="collapsible">
+                        Exotic Option Pricing:.
+					</button>
+					<div class="content">
 						<p>
 						</p>                                             
 					</div>
                 </li>
                 <li>
-                    <div class="heading" onmouseover="this.style.background='#F5F5F5';" onmouseout="this.style.background='#E5E5E5';">
-						<h4>
-							<a name='XVA'>
-								XVA Pricing:.
-							</a>
-							<span class="icon-close-open"></span>
-						</h4>
-					</div>
-					<div class="expandable">
+                    <button type="button" class="collapsible">
+                        XVA Pricing:.
+					</button>
+					<div class="content">
 						<p>
 						</p>                                             
 					</div>
                 </li>
                 <li>
-                    <div class="heading" onmouseover="this.style.background='#F5F5F5';" onmouseout="this.style.background='#E5E5E5';">
-						<h4>
-							<a name='VaR'>
-								VaR Calculation:.
-							</a>
-							<span class="icon-close-open"></span>
-						</h4>
-					</div>
-					<div class="expandable">
+                    <button type="button" class="collapsible">
+                        VaR Calculation:.
+					</button>
+					<div class="content">
 						<p>
-						</p>                                             
+						</p>                                    
 					</div>
                 </li>
             </ol>
@@ -666,6 +631,21 @@
                     </div>
                 </div>
         </font>
+        <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+        </script>
     </body>
 </html>
 
