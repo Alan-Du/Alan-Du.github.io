@@ -132,10 +132,18 @@
                 </li>
                 <li>
                     <button type="button" class="collapsible">
-                        VaR Calculation:.
+                        VaR & StressTesting: Duration method and Monte-Carlo Simulation for VaR calculation and stresstesting revisit.
 					</button>
 					<div class="content">
 						<p>
+						In this section, I will apply Monte-Carlo method to another interesting topic: VaR calcualtion. ALso will talk
+							about how to use duration method as well as stresstesting on swaps. Basically, we are applying monte-carlo 
+							gieven a time window and try to simulate yield curves in a future time. After we get a set of termstructures,
+							we re-calculate swap values and calculate corresponding quantile for VaR. The method for stresstesting is simply 
+							reused what I have listed in SwapPricing notebook plus user defined of stressed scenarios. For detailed information,
+							PLEASE review my previous posts: "SwapPricing" and "ShortRateModel".
+						</br>
+						<a href="Samples/VaR_StressTesting.html">NoteBook:VaR_StressTesting.html</a>
 						</p>                                    
 					</div>
                 </li>
