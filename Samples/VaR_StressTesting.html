@@ -13965,6 +13965,27 @@ Curve Convex Down = 16144.709053909217
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Summary">Summary<a class="anchor-link" href="#Summary">&#182;</a></h2><p>In this workbook, I detailed how to calcualte VaR using Duration(Variance-Covariance) method nad Monte-Carlo simulation method. The most portion of this comes from simulation method which needs us calibrate short rate model first. The key point of model calibration please refer to my previous post in shortrate model. There are serveal key points when actually using this method to calculate VaR:</p>
+<p><span>
+<font color='blue'></p>
+<ul>
+<li><p>When we calibrate short rate model please notice the acutal swaption volatility inputs should in line with swap maturity. In this way we can make sure the expectation of swap pricing is equal to actual swap price.</p>
+</li>
+<li><p>After model calibration, we also need reconstruct discounting curves as if those curves starting today. This is a huge difference compared to CVA calculation. In CVA calculation, we are using simulated curves as if they are on the date simulated. However, in this case, we have to simulated them as if they are starting from today. Since all we need from simulation is a set of possible NPVs.</p>
+</li>
+<li><p>The biggest differnce between simulation method and duration method of VaR comes from the assumption that duration method assumes a pro-rata scale of VaR. For example, the difference between 1D VaR and 100DVaR is only a factor of 10. But the actual rates movements also includes correlations which makes this simple scale does not work. On the other hand, Monte-Carlo simulation method can incorprate this correlations in the termstructure simulations. For a 100D VaR we are actually simulating a set of curves that possibly could happend in 100Days.</p>
+</li>
+</ul>
+<p>&lt;/span&gt;</p>
+
+</div>
+</div>
+</div>
     </div>
   </div>
 </body>
