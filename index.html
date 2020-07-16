@@ -49,14 +49,15 @@
             <ol type="disk">
 				<li>
                     <button type="button" class="collapsible">
-                        Yield Curve Building: Bootstrapping with LIBOR curve, FX curve and OIS curve.
+                        Yield Curve Building Revisit: Bootstrapping with LIBOR curve, single(cross) currency basis curve, OIS curve and SOFR/ESTR curve.
                     </button>
 					<div class="content">
                         <p>
-						In this section, I will start with curve building method in Fixed Income area. The importance of curve building
+				In this section, I will start with curve building method in Fixed Income area. The importance of curve building
                         sets the backbone for almost all analyze staff in Fixed Income area. From where you might be able to learn and do
-                        analysis of Risks, Valuations and Simulations. Basically there are three different curves involved: LIBOR curve,
-                        FX curve and OIS curve.
+                        analysis of Risks, Valuations and Simulations. Basically there are three different curves involved: LIBOR curve, single(cross) 
+				currency basis curve, OIS curve and SOFR/ESTR curve. Since the fall back of LIBOR, in the future, we expect to use SOFR for USD discounting,
+				ESTR for EUR discounting and their impact on swaps valuation.
                         </br>
                         <a href="Samples/Bootstrapping.html">NoteBook:BootStrapping.html</a>
 			</br>
@@ -165,6 +166,25 @@
 			</p>                                    
 		</div>
                 </li>
+		<li>
+                    <button type="button" class="collapsible">
+                        VaR/CVaR Details Revisit: linear, non-linear and swap portfolio level construction.
+		</button>
+		<div class="content">
+			<p>
+			In this section, we will revisit VaR and CVaR calculaiton based on Monte-Carlo simulation with historical returns correlation structure.
+			we assume the price dynamic follows log-normal distribution, stock option portfolio also based on stock price return 
+			in log normal distribution and we apply delta-gamma-theta rule to approximate its return and the last one is a 
+			swap portfolio and we have to construct yield curve and do rate market simulation.
+			</br>
+			<a href="Samples/VaR_CVaR_Review.html">NoteBook:VaR_CVaR_Review.html</a>
+			</br>
+			<a href="Samples/VaR_CVaR_Review.ipynb" download="Samples/VaR_CVaR_Review.ipynb">Download:RightClick->Save</a>
+             
+			</p>                                    
+		</div>
+                </li>
+
 		<li>
                     <button type="button" class="collapsible">
                         Exchanges Scraping Scripts: Python OOP design of China's major exchanges data scraping.
