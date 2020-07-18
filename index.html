@@ -67,7 +67,12 @@
                         <a href="Samples/BootStrap_Review_IBOR_OIS_CSA_SOFR.html">NoteBook:BootStrap_Review_IBOR_OIS_CSA_SOFR.html</a>
 			</br>
 			<a href="Samples/BootStrap_Review_IBOR_OIS_CSA_SOFR.ipynb" download="Samples/BootStrap_Review_IBOR_OIS_CSA_SOFR.ipynb">Download:RightClick->Save</a>
-	
+			</br>
+			Below notebook includes another implementation of QuantLib-Python, I will walk you throught bascially the same curve construction as we did in the previous notebook.
+			With QuantLib implementation, the curve will be stored and constructed in an object called yield curve handler, the good thing for this implementation is 
+			it is relative easy to grasp and use by others, but obviously the drawback is you do not have much flexible when using their implementation.
+			For example, if one wants to generate different scnario pricing then the shock curve method needs to be constructed by some specific rule.
+			That will require some changes in the QuantLib implementation since its curve handler does not support the scnario simulation.
                         </br>
                         <a href="Samples/Bootstrapping.html">NoteBook:BootStrapping.html</a>
 			</br>
